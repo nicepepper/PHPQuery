@@ -47,13 +47,12 @@
             $price = $coupons->find('.pod_expiry')->html();
             echo "<img src='$img'>";
             echo "<h3>Заголовок: $heading</h3>";
-            echo "<pre>$discriprion</pre>";
-            echo "<pre>$price</pre>"; 
+            echo "<pre>Описание: $discriprion</pre>";
+            echo "<pre>Дата: $price</pre>";
             echo '<br/>';
-
         }
     }
-    
+
     $url2 = 'https://www.coupons.com/store-loyalty-card-coupons/acme-coupons/';
     parser($url2);
 ?>
